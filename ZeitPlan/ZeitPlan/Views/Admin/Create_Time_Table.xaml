@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Admin.Create_Time_Table"
+             Title="Create Time Table">
+    <ContentPage.Content>
+        <StackLayout Padding="24">
+           
+            <Entry  Placeholder="Day" x:Name="txtDay" Keyboard="Chat"/>
+            <Label Text="Date" FontSize="20" HorizontalTextAlignment="Start"/>
+            <DatePicker x:Name="date"/>
+            <Picker Title="--Select Class" x:Name="ddlClass"/>
+            <Picker Title="--Select Course" x:Name="ddlCourse"/>
+            <Picker Title="--Select Teacher" x:Name="ddlTeacher"/>
+            <Picker Title="--Select Slot" x:Name="ddlSlot"/>
+            <Picker Title="--Select Room" x:Name="ddlRoom"/>
+           
+
+            <ActivityIndicator x:Name="LoadingInd" IsRunning="False" />
+            <Button Text="Create" x:Name="btnCreate2" Clicked="btnCreate2_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Admin.Slot_Detail">
+    <ContentPage.Content>
+        
+            <StackLayout Padding="24" >
+
+                <Grid ColumnDefinitions="100,*" VerticalOptions="Center" HorizontalOptions="Center"  RowDefinitions="*" Grid.ColumnSpan="3" Grid.RowSpan="4" >
+
+                    <Label BackgroundColor="LightBlue"    FontAttributes="Bold" Grid.Row="0"  Grid.Column="0" Text="SlotName:"/>
+                    <Label Grid.Row="0"   BackgroundColor="LightGray" Grid.Column="1" x:Name="SlotName"/>
+                <Label Grid.Row="1"   FontAttributes="Bold" Grid.Column="0" BackgroundColor="LightBlue"  Text="Slot_Start_Time:"/>
+                <Label Grid.Row="1" Grid.Column="1"  BackgroundColor="LightGray"  x:Name="Slot_Start_Time"/>
+                <Label BackgroundColor="LightBlue"    FontAttributes="Bold" Grid.Row="2"  Grid.Column="0" Text="Slot_End_Time:"/>
+                <Label Grid.Row="2"   BackgroundColor="LightGray" Grid.Column="1" x:Name="Slot_End_Time"/>
+                <Label Grid.Row="3"   FontAttributes="Bold" Grid.Column="0" BackgroundColor="LightBlue"  Text="Day:"/>
+                <Label Grid.Row="3" Grid.Column="1"  BackgroundColor="LightGray"  x:Name="Day"/>
+                <Label Grid.Row="4"   FontAttributes="Bold" Grid.Column="0" BackgroundColor="LightBlue"  Text="Date:"/>
+                <Label Grid.Row="4" Grid.Column="1"  BackgroundColor="LightGray"  x:Name="Date"/>
+
+
+            </Grid>
+            </StackLayout>
+       
+    </ContentPage.Content>
+</ContentPage>

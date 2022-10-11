@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Teacher.Register" BackgroundColor="White" BackgroundImageSource="mg.jpd"
+             Title="Register">
+    <ContentPage.Content>
+        <ScrollView >
+            <StackLayout Padding="0">
+                <Grid>
+                    <StackLayout Padding="0" Margin="0">
+
+                        <Frame BackgroundColor="white" HeightRequest="210" HorizontalOptions="FillAndExpand" Padding="0">
+                            <Image Source="def.png" Aspect="AspectFill" Margin="0" />
+                        </Frame>
+                    </StackLayout>
+                    
+                    <StackLayout Margin="20,110,15,0">
+                      
+
+                        <Frame BackgroundColor="white" HasShadow="True" HeightRequest="800" HorizontalOptions="FillAndExpand">
+
+
+                            <StackLayout>
+                                <StackLayout HorizontalOptions="CenterAndExpand">
+                                    <Label Text="REGISTER" TextColor="#bd6513" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center">
+                                    </Label>
+                                </StackLayout>
+                                <StackLayout Margin="0,25,0,0">
+
+                                    <Image x:Name="PreviewPic" HeightRequest="200" WidthRequest="500" Source="image_picker.png">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1">
+
+                                            </TapGestureRecognizer>
+                                        </Image.GestureRecognizers>
+                                    </Image>
+                                    <Label Text="Pick Image" TextColor="#bd6513" FontSize="15" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold"></Label>
+                                    <Frame BackgroundColor="white" Padding="0" Margin="0" BorderColor="#bd6513" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Frame BackgroundColor="white" CornerRadius="15" HeightRequest="30" WidthRequest="30" Padding="0" Margin="7" HorizontalOptions="Start">
+                                                <Image Source="pro.png"  BackgroundColor="White" Aspect="AspectFill" Margin="0" />
+                                            </Frame>
+                                            <Entry ClearButtonVisibility="WhileEditing" Placeholder="Name" TextColor="#bd6513" PlaceholderColor="Gray" Keyboard="Chat" x:Name="txtName" HorizontalOptions="FillAndExpand" Margin="0,0,15,0">
+
+                                            </Entry>
+
+
+                                        </StackLayout>
+                                    </Frame>
+
+                                    <Frame BackgroundColor="white" Padding="0" Margin="0" BorderColor="#bd6513" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Frame BackgroundColor="white" CornerRadius="15" HeightRequest="30" WidthRequest="30" Padding="0" Margin="7" HorizontalOptions="Start">
+                                                <Image Source="em.png"  BackgroundColor="White" Aspect="AspectFill" Margin="0" />
+                                            </Frame>
+                                            <Entry ClearButtonVisibility="WhileEditing"  Placeholder="Email" TextColor="#bd6513"  PlaceholderColor="Gray" Keyboard="Email" x:Name="txtEmail" HorizontalOptions="FillAndExpand" Margin="0,0,15,0">
+
+                                            </Entry>
+                                            <!--<Label x:Name="EmailValid"  />-->
+
+                                        </StackLayout>
+                                    </Frame>
+
+                                    <Frame BackgroundColor="white" Padding="0" Margin="0" BorderColor="#bd6513" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Frame BackgroundColor="white" CornerRadius="15" HeightRequest="30" WidthRequest="30" Padding="0" Margin="7" HorizontalOptions="Start">
+                                                <Image Source="pass.png"  BackgroundColor="White" Aspect="AspectFill" Margin="0" />
+                                            </Frame>
+                                            <Entry ClearButtonVisibility="WhileEditing"  IsPassword="True"  Placeholder="Password" TextColor="#bd6513" PlaceholderColor="Gray" Keyboard="Chat" x:Name="txtPassword" HorizontalOptions="FillAndExpand" Margin="0,0,15,0">
+
+                                            </Entry>
+                                            <Frame BackgroundColor="white" CornerRadius="15" HeightRequest="30" WidthRequest="30" Padding="0" Margin="7" HorizontalOptions="Start">
+                                                <Image Source="eyeview.png"  BackgroundColor="White" Aspect="AspectFill" Margin="0" />
+                                            </Frame>
+                                            <!--<Label x:Name="PasswordValid" />-->
+
+                                        </StackLayout>
+                                    </Frame>
+
+                                    <Frame BackgroundColor="white" Padding="0" Margin="0" BorderColor="#bd6513" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Frame BackgroundColor="white" CornerRadius="15" HeightRequest="30" WidthRequest="30" Padding="0" Margin="7" HorizontalOptions="Start">
+                                                <Image Source="confirm.png"  BackgroundColor="White" Aspect="AspectFill" Margin="0" />
+                                            </Frame>
+                                            <Entry IsPassword="True" ClearButtonVisibility="WhileEditing" Placeholder="Confirm Password" TextColor="#bd6513" PlaceholderColor="Gray" Keyboard="Chat" x:Name="txtCPassword" HorizontalOptions="FillAndExpand" Margin="0,0,15,0">
+
+                                            </Entry>
+                                        </StackLayout>
+                                    </Frame>
+                                    <Frame BackgroundColor="white" Padding="0" Margin="0" BorderColor="#bd6513" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Frame BackgroundColor="white" CornerRadius="15" HeightRequest="30" WidthRequest="30" Padding="0" Margin="7" HorizontalOptions="Start">
+                                                <Image Source="ph.png"  BackgroundColor="White" Aspect="AspectFill" Margin="0" />
+                                            </Frame>
+                                            <Entry ClearButtonVisibility="WhileEditing" Placeholder="Phone No" TextColor="#bd6513" PlaceholderColor="Gray" Keyboard="Chat" x:Name="txtPhone" HorizontalOptions="FillAndExpand" Margin="0,0,15,0">
+
+                                            </Entry>
+                                        </StackLayout>
+                                    </Frame>
+                                    <Frame BackgroundColor="white" Padding="0" Margin="0" BorderColor="#bd6513" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Frame BackgroundColor="white" CornerRadius="15" HeightRequest="30" WidthRequest="30" Padding="0" Margin="7" HorizontalOptions="Start">
+                                                <Image Source="Lo.png"  BackgroundColor="White" Aspect="AspectFill" Margin="0" />
+                                            </Frame>
+                                            <Entry  ClearButtonVisibility="WhileEditing" Placeholder="Address" TextColor="#bd6513" PlaceholderColor="Gray" Keyboard="Chat" x:Name="txtAddress" HorizontalOptions="FillAndExpand" Margin="0,0,15,0">
+
+                                            </Entry>
+                                        </StackLayout>
+                                    </Frame>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal">
+                                    <CheckBox IsChecked="False" Color="#bd6513"></CheckBox>
+                                    <Label Text="Remember me" TextColor="#bd6513" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"></Label>
+                                    <Label Text="Forget Password"  HorizontalTextAlignment="End" FontAttributes="bold" FontSize="15" VerticalTextAlignment="End" Margin="6" HorizontalOptions="EndAndExpand" TextColor="#bd6513"></Label>
+                                </StackLayout>
+                                <ActivityIndicator x:Name="LoadingInd" IsRunning="False" />
+
+                                <Button Text="Register"  FontAttributes="Bold"
+                                    CornerRadius="30" BackgroundColor="#bd6513" TextColor="#FFFFFF" Clicked="Button_Clicked"/>
+
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                    <Label Text="Already Registered" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+                                    <Label Text="LOGIN" HorizontalTextAlignment="Center" TextColor="#bd6513" FontAttributes="Bold" VerticalTextAlignment="Center">
+                                        <Label.GestureRecognizers>
+
+                                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </StackLayout>
+
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+
+
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+
+
+
+        <!--<StackLayout Padding="24">
+            <Entry IsTextPredictionEnabled="True" Keyboard="Chat"  Placeholder="Name" x:Name="txtName" />
+            <Entry Keyboard="Numeric" Placeholder="Phone Number" TextChanged="txtPhone_TextChanged" x:Name="txtPhone" />
+            <Label x:Name="PhoneNumbervalid" />
+            
+            <Entry Keyboard="Email" Placeholder="Email" TextChanged="txtEmail_TextChanged" x:Name="txtEmail" />
+            <Label x:Name="EmailValid" />
+            
+            <Entry IsPassword="True" TextChanged="txtPassword_TextChanged" Placeholder="Password" x:Name="txtPassword" />
+            <Label x:Name="PasswordValid" />
+            <Entry  IsPassword="True" Placeholder="Confirm Password" x:Name="txtCPassword" />
+
+            <ActivityIndicator x:Name="LoadingInd" IsRunning="False" />
+            <Button Text="Register" Clicked="Button_Clicked"/>
+        </StackLayout>-->
+    </ContentPage.Content>
+</ContentPage> 

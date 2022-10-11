@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Admin.Class_Detail">
+    <ContentPage.Content>
+        <StackLayout>
+            <ActivityIndicator x:Name="LoadingInd" IsRunning="False" />
+           
+                            <ScrollView Orientation="Vertical">
+            <StackLayout Padding="24" >
+              
+                    <Grid ColumnDefinitions="100,*" VerticalOptions="Center" HorizontalOptions="Center"  RowDefinitions="*" Grid.ColumnSpan="2" Grid.RowSpan="6" >
+                    <Label Grid.Row="0"   FontAttributes="Bold" Grid.Column="0" BackgroundColor="LightBlue"  Text="ClassName:"/>
+                                        <Label Grid.Row="0" Grid.Column="1"  BackgroundColor="LightGray"  x:Name="ClassName"/>
+                    <Label BackgroundColor="LightBlue"    FontAttributes="Bold" Grid.Row="1"  Grid.Column="0" Text="Session:"/>
+                                        <Label Grid.Row="1"   BackgroundColor="LightGray" Grid.Column="1"  x:Name="Session"/>
+                    <Label Grid.Row="2"    FontAttributes="Bold" Grid.Column="0" BackgroundColor="LightBlue"   Text="Section:"/>
+                                        <Label Grid.Row="2" Grid.Column="1"  BackgroundColor="LightGray"  x:Name="Section"/>
+                    <Label Grid.Row="3"    FontAttributes="Bold" Grid.Column="0" BackgroundColor="LightBlue"   Text="Shift:"/>
+                                        <Label Grid.Row="3" Grid.Column="1"  BackgroundColor="LightGray"  x:Name="Shift"/>
+                    <Label Grid.Row="4"   FontAttributes="Bold" Grid.Column="0" BackgroundColor="LightBlue"  Text="Semester:"/>
+                                        <Label Grid.Row="4" Grid.Column="1"  BackgroundColor="LightGray"  x:Name="Semester"/>
+                    <Label Grid.Row="5"    FontAttributes="Bold" Grid.Column="0" BackgroundColor="LightBlue"   Text="DegreeName:"/>
+                                        <Label Grid.Row="5" Grid.Column="1"  BackgroundColor="LightGray" x:Name="DegreeName"/>
+           
+
+                </Grid>
+                    
+            </StackLayout>
+        </ScrollView>
+                
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

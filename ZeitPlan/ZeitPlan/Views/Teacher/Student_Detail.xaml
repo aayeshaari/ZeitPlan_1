@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Teacher.Student_Detail">
+    <ContentPage.Content>
+        <StackLayout>
+            <ActivityIndicator x:Name="LoadingInd" IsRunning="False" />
+           
+                            <ScrollView Orientation="Vertical">
+            <StackLayout Padding="24" >
+
+                <Grid ColumnDefinitions="100,*" VerticalOptions="Center" HorizontalOptions="Center"  RowDefinitions="*" Grid.ColumnSpan="2" Grid.RowSpan="3" >
+
+                    <Label BackgroundColor="LightBlue"    FontAttributes="Bold" Grid.Row="1"  Grid.Column="0" Text="Student_Name:"/>
+                                        <Label Grid.Row="1"   BackgroundColor="LightGray" Grid.Column="1" Text="{Binding STUDENT_NAME}" x:Name="StudentName"/>
+                 
+                    <Label Grid.Row="2"    FontAttributes="Bold" Grid.Column="0" BackgroundColor="LightBlue"   Text="Student_Password:"/>
+                                        <Label Grid.Row="2" Grid.Column="1"  BackgroundColor="LightGray" x:Name="StudentPassword"/>
+                    <Label Grid.Row="3"    FontAttributes="Bold" Grid.Column="0" BackgroundColor="LightBlue"   Text="Student_Email:"/>
+                                        <Label Grid.Row="3" Grid.Column="1"  BackgroundColor="LightGray"   x:Name="StudentEmail"/>
+                    <Label Grid.Row="0"   FontAttributes="Bold" Grid.Column="0" BackgroundColor="LightBlue"  Text="ClassName:"/>
+                                        <Label Grid.Row="0" Grid.Column="1"  BackgroundColor="LightGray"  x:Name="ClassName"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+       
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

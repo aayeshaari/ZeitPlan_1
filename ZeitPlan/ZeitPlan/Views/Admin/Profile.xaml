@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Admin.Profile">
+    <ContentPage.Content>
+        <StackLayout Padding="0">
+            <Grid>
+                <StackLayout Padding="0" Margin="0">
+
+                    <Frame BackgroundColor="white" HeightRequest="210" HorizontalOptions="FillAndExpand" Padding="0">
+                        <Image Source="def.png" Aspect="AspectFill" Margin="0" />
+                    </Frame>
+                </StackLayout>
+                <StackLayout Margin="15,110,15,0">
+
+                    <Frame BackgroundColor="white" HasShadow="True" HeightRequest="400" HorizontalOptions="FillAndExpand">
+
+
+                        <StackLayout>
+                            <StackLayout HorizontalOptions="CenterAndExpand">
+                                <Label Text="Admin Profile" TextColor="#bd6513" FontSize="Medium" FontAttributes="Bold" HorizontalTextAlignment="Center">
+
+
+
+                                </Label>
+
+
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

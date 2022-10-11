@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Admin.TImeTable_Detail">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <StackLayout Padding="24" >
+
+                <Grid ColumnDefinitions="100,*" VerticalOptions="Center" HorizontalOptions="Center"  RowDefinitions="*" Grid.ColumnSpan="2" Grid.RowSpan="6" >
+                    <Label Grid.Row="0"   FontAttributes="Bold" Grid.Column="0" BackgroundColor="LightBlue"  Text="TimeTable_ID:"/>
+                    <Label Grid.Row="0" Grid.Column="1"  BackgroundColor="LightGray"  x:Name="TimeTableID"/>
+                    <Label BackgroundColor="LightBlue"    FontAttributes="Bold" Grid.Row="1"  Grid.Column="0" Text="Class_FID:"/>
+                    <Label Grid.Row="1"   BackgroundColor="LightGray" Grid.Column="1" x:Name="ClassFID"/>
+
+                    <Label Grid.Row="2"    FontAttributes="Bold" Grid.Column="0" BackgroundColor="LightBlue"   Text="Course_FID:"/>
+                    <Label Grid.Row="2" Grid.Column="1"  BackgroundColor="LightGray"  x:Name="CourseFID"/>
+                    <Label Grid.Row="3"    FontAttributes="Bold" Grid.Column="0" BackgroundColor="LightBlue"   Text="Slot_FID:"/>
+                    <Label Grid.Row="3" Grid.Column="1"  BackgroundColor="LightGray"  x:Name="SlotFID"/>
+                    <Label Grid.Row="4"    FontAttributes="Bold" Grid.Column="0" BackgroundColor="LightBlue"   Text="Room_FID:"/>
+                    <Label Grid.Row="4" Grid.Column="1"  BackgroundColor="LightGray"  x:Name="RoomFID"/>
+
+                    <Label Grid.Row="5"    FontAttributes="Bold" Grid.Column="0" BackgroundColor="LightBlue"   Text="Teacher_FID:"/>
+                    <Label Grid.Row="5" Grid.Column="1"  BackgroundColor="LightGray"  x:Name="TeacherFID"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

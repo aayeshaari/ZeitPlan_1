@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Admin.Request_Portol" Title="Request Message">
+    <ContentPage.Content>
+        <StackLayout Padding="24">
+            <Label Text="Department Name" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+            <Picker Title="--Select Department" x:Name="ddldept"/>
+           
+
+            <Picker Title="Select Student" x:Name="ddlStudent"/>
+            <Label Text="Student Name" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+            <Label Text="Date:" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+            <DatePicker x:Name="dp"/>
+            <Label Text="Time:" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+            <TimePicker x:Name="tp"/>
+            <Label Text="Type:" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+            <Picker Title="--SelectType" x:Name="ddltype">
+                <Picker.Items>
+                    <x:String  >Complain</x:String>
+                    <x:String >FeedBack</x:String>
+                    <x:String >Suggestion</x:String>
+                    <x:String >Request</x:String>
+                </Picker.Items>
+                </Picker>
+            <Label Text="Subject:" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+            <Entry Placeholder="Message" HorizontalOptions="FillAndExpand" Keyboard="Chat" HeightRequest="150" x:Name="Subject"/>
+            <ActivityIndicator x:Name="LoadingInd" IsRunning="False" />
+            <Button Text="Send" Clicked="sendbtn_Clicked"   x:Name="sendbtn" BackgroundColor="#bd6513" BorderColor="white"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

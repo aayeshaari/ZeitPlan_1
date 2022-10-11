@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Admin.Degree_Detail" Title="Degree Detail">
+    <ContentPage.Content>
+        <StackLayout>
+            <ActivityIndicator x:Name="LoadingInd" IsRunning="False" />
+           
+                            <ScrollView Orientation="Vertical">
+            <StackLayout Padding="24" >
+
+                <Grid ColumnDefinitions="100,*" VerticalOptions="Center" HorizontalOptions="Center"  RowDefinitions="*" Grid.ColumnSpan="2" Grid.RowSpan="2" >
+                    
+                    <Label BackgroundColor="LightBlue"    FontAttributes="Bold" Grid.Row="0"  Grid.Column="0" Text="DegreeName:"/>
+                                        <Label Grid.Row="0"   BackgroundColor="LightGray" Grid.Column="1" x:Name="DegreeName"/>
+                    <Label Grid.Row="1"    FontAttributes="Bold" Grid.Column="0" BackgroundColor="LightBlue"   Text="DepartmentName:"/>
+                                        <Label Grid.Row="1" Grid.Column="1"  BackgroundColor="LightGray"   x:Name="DepartmentName"/>
+
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+                       
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZeitPlan.Views.Teacher.Request_Portol">
+    <ContentPage.Content>
+        <StackLayout Padding="24">
+            <Label Text="TO" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+            <Entry Placeholder="Email" Keyboard="Email" HorizontalOptions="FillAndExpand" x:Name="email" TextChanged="email_TextChanged"/>
+            <Label Text="Subject" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+            <Entry Placeholder="Subject" HorizontalOptions="FillAndExpand" Keyboard="Chat" x:Name="subject"/>
+            <Label Text="Body" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+            <Entry Placeholder="Compose Email" HorizontalOptions="FillAndExpand" Keyboard="Email" HeightRequest="150" x:Name="body"/>
+            <Button Text="Send" Clicked="Button_Clicked" IsEnabled="False" x:Name="sendemailbtn"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
